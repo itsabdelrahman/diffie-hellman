@@ -98,6 +98,7 @@ const App: React.FC = () => {
 
               <TableCell border="all">
                 <TextInput
+                  style={styles.numeric}
                   type="number"
                   plain={true}
                   value={g}
@@ -116,6 +117,7 @@ const App: React.FC = () => {
 
               <TableCell border="all">
                 <TextInput
+                  style={styles.numeric}
                   type="number"
                   plain={true}
                   value={p}
@@ -146,6 +148,7 @@ const App: React.FC = () => {
 
                   <TableCell border="all">
                     <TextInput
+                      style={styles.numeric}
                       type="number"
                       plain={true}
                       value={a}
@@ -184,6 +187,7 @@ const App: React.FC = () => {
 
                   <TableCell border="all">
                     <TextInput
+                      style={styles.numeric}
                       type="number"
                       plain={true}
                       value={b}
@@ -211,6 +215,12 @@ const App: React.FC = () => {
       <TeX block={true}>{equalityExpression}</TeX>
     </Grommet>
   );
+};
+
+const styles = {
+  numeric: {
+    fontFamily: 'IBM Plex Mono',
+  },
 };
 
 export default App;
