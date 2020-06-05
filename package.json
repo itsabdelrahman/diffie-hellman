@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@matejmazur/react-katex": "^3.0.2",
+    "big-integer": "^1.6.48",
     "grommet": "^2.13.0",
     "katex": "^0.11.1",
     "react": "^16.13.1",
