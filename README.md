@@ -14,6 +14,13 @@
 
 ## Development
 
+### Prerequisites
+
+- [Node.js](https://nodejs.org/en) `v12.16.3`
+- [Yarn](https://yarnpkg.com/en/)
+
+### Running
+
 - `❯ yarn`
 - `❯ yarn start`
 
