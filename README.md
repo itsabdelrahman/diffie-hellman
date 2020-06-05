@@ -9,7 +9,7 @@
     <img src="https://www.pwa-shields.com/1.0.0/series/classic/white/purple.svg"/>
   </a>
 
-  <img src="https://user-images.githubusercontent.com/11808903/83822887-a3d1cc80-a6d2-11ea-8602-9c9bfe62a2c4.png" />
+  <img src="https://user-images.githubusercontent.com/11808903/83823755-0035eb80-a6d5-11ea-824c-c1dae99e7c0c.png" />
 </div>
 
 ## Development
