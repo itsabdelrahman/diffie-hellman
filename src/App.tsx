@@ -105,9 +105,11 @@ const App: React.FC = () => {
                   style={styles.numeric}
                   type="number"
                   plain={true}
+                  min={0}
+                  step={1}
                   value={g}
                   onChange={(event) => {
-                    const value = Number(event.target.value);
+                    const value = Math.floor(Number(event.target.value));
                     setG(Math.max(value, 0));
                   }}
                 />
@@ -124,9 +126,11 @@ const App: React.FC = () => {
                   style={styles.numeric}
                   type="number"
                   plain={true}
+                  min={1}
+                  step={1}
                   value={p}
                   onChange={(event) => {
-                    const value = Number(event.target.value);
+                    const value = Math.floor(Number(event.target.value));
                     setP(Math.max(value, 1));
                   }}
                 />
@@ -160,9 +164,11 @@ const App: React.FC = () => {
                       style={styles.numeric}
                       type="number"
                       plain={true}
+                      min={0}
+                      step={1}
                       value={a}
                       onChange={(event) => {
-                        const value = Number(event.target.value);
+                        const value = Math.floor(Number(event.target.value));
                         setA(Math.max(value, 0));
                       }}
                     />
@@ -206,9 +212,11 @@ const App: React.FC = () => {
                       style={styles.numeric}
                       type="number"
                       plain={true}
+                      min={0}
+                      step={1}
                       value={b}
                       onChange={(event) => {
-                        const value = Number(event.target.value);
+                        const value = Math.floor(Number(event.target.value));
                         setB(Math.max(value, 0));
                       }}
                     />
