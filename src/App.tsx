@@ -9,10 +9,13 @@ import {
   TableRow,
   TextInput,
 } from 'grommet';
+import { useMediaQuery } from 'react-responsive';
 import BigInt from 'big-integer';
 const TeX = require('@matejmazur/react-katex');
 
 const App: React.FC = () => {
+  const isMobile = useMediaQuery({ query: '(max-width: 767px)' });
+
   const [g, setG] = useState(627);
   const [p, setP] = useState(941);
   const [a, setA] = useState(347);
@@ -133,8 +136,13 @@ const App: React.FC = () => {
         </Table>
       </Box>
 
-      <Box direction="row">
-        <Box fill={true} margin="medium" pad="small" border="all">
+      <Box direction={isMobile ? 'column' : 'row'} margin="medium">
+        <Box
+          fill={true}
+          margin={{ vertical: 'small' }}
+          pad="small"
+          border="all"
+        >
           <Heading level="5" margin={{ top: 'xsmall', bottom: 'small' }}>
             Alice
           </Heading>
@@ -173,7 +181,14 @@ const App: React.FC = () => {
           </Box>
         </Box>
 
-        <Box fill={true} margin="medium" pad="small" border="all">
+        <Box margin="xsmall" />
+
+        <Box
+          fill={true}
+          margin={{ vertical: 'small' }}
+          pad="small"
+          border="all"
+        >
           <Heading level="5" margin={{ top: 'xsmall', bottom: 'small' }}>
             Bob
           </Heading>
