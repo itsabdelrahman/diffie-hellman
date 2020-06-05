@@ -9,6 +9,7 @@ import {
   TableRow,
   TextInput,
 } from 'grommet';
+import BigInt from 'big-integer';
 const TeX = require('@matejmazur/react-katex');
 
 const App: React.FC = () => {
@@ -22,10 +23,10 @@ const App: React.FC = () => {
   const modulus = '\\bmod';
   const prime = '\\prime';
 
-  const A = BigInt(BigInt(g) ** BigInt(a) % BigInt(p));
-  const B = BigInt(BigInt(g) ** BigInt(b) % BigInt(p));
-  const APrime = BigInt(B ** BigInt(a) % BigInt(p));
-  const BPrime = BigInt(A ** BigInt(b) % BigInt(p));
+  const A = BigInt(g).modPow(a, p);
+  const B = BigInt(g).modPow(b, p);
+  const APrime = B.modPow(a, p);
+  const BPrime = A.modPow(b, p);
 
   const symbolicExpressionA = `g^a ${modulus} p`;
   const symbolicExpressionB = `g^b ${modulus} p`;
