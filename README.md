@@ -5,7 +5,7 @@
 
 <b>Key Exchange Algorithm</b>
 
-  <a href="https://phonetically.xyz">
+  <a href="https://diffie-hellman.now.sh">
     <img src="https://www.pwa-shields.com/1.0.0/series/classic/white/purple.svg"/>
   </a>
 
